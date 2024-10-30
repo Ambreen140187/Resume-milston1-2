@@ -1,0 +1,164 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4682B4; /* Shadow blue border */
+}
+
+/* Left Section */
+.left-section {
+    width: 35%;
+    background-color: #333; /* Black background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+ /* .mypic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #4682B4; /* Shadow blue border */
+    /* margin-bottom: 20px;
+}  */
+.mypic {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #4682B4; /* Shadow blue border */
+    margin-bottom: 20px;
+}
+
+.left-section h3 {
+    color: #4682B4;
+    margin-top: 0;
+}
+
+.left-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+/* Right Section */
+.right-section {
+    width: 65%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.right-section h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4682B4; /* Shadow blue bottom border */
+    padding-bottom: 5px;
+}
+
+.right-section section {
+    margin-bottom: 20px;
+}
+
+.right-section h3 {
+    color: #4682B4;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.right-section p,
+.right-section ul {
+    /* font-size: 0.95rem;
+    line-height: 1.6; */
+
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    padding: 10px;
+    background-color: #f1f1f1; /* Light gray background for readability */
+    border-left: 4px solid #4682B4; /* Shadow blue left border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.right-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.right-section li {
+    margin-bottom: 5px;
+}
+
+/* Links */
+.right-section a {
+    color: #4682B4;
+    text-decoration: none;
+}
+
+.right-section a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+#toggle-skills {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #4682B4;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#toggle-skills:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        border-bottom: 2px solid #4682B4;
+    }
+    #objective p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+        padding: 10px;
+        background-color: #f1f1f1; /* Light gray background for readability */
+        border-left: 4px solid #4682B4; /* Shadow blue left border */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+        border-radius: 5px;}
+    
+}
